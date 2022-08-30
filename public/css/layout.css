@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+main {
+    padding-top: 70px;
+}
+#navbar {
+    background-color: #FFFFFF;
+    position: fixed;
+    font-size: 1.2rem;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    z-index: 999;
+}
+#navbar ul {
+    margin: 0;
+}
+#navbar ul li {
+    list-style: none;
+}
+#navbar a {
+    color: #000000;
+}
+#navbar a:hover {
+    opacity: 0.65;
+}

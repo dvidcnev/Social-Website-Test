@@ -1,0 +1,12 @@
+img {
+    max-height: 600px;
+}
+#main {
+    width: 75%;
+}
+.descript-text {
+    font-size: 1.75rem;
+}
+h1 {
+    font-size: 3rem;
+}

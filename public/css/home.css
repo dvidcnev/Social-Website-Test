@@ -1,0 +1,21 @@
+/* h1 {
+    color: white;
+} */
+#main {
+    width: 60%;
+    border-left: 2px solid rgb(212, 212, 212);
+    border-right: 2px solid rgb(212, 212, 212);
+}
+img {
+    max-height: 400px;
+}
+#main a {
+    text-decoration: none;
+    color: black;
+}
+#main a:hover {
+    opacity: .85;
+}
+.descript-text {
+    font-size: 1.35rem;
+}

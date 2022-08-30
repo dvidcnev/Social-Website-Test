@@ -1,0 +1,11 @@
+#createmain {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.flexing {
+    justify-content: center;
+}
+#filebutton {
+    text-align: center;
+}
