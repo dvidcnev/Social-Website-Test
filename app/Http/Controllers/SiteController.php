@@ -16,9 +16,18 @@ class SiteController extends Controller
     public function about() {
         return view('about');
     }
-    public function show($id) {
-        return view('posts.show', [
-            'post' => Post::show($id)
-        ]);
-    }
+    // public function show($id) {
+    //     return view('posts.show', [
+    //         'post' => Post::show($id)
+    //     ]);
+    // }
+
+    // public function show(Post $post)
+    // {
+    //     return view('posts.show', [
+    //         'post' => $post
+    //     ]);
+    // }
+
+
 }

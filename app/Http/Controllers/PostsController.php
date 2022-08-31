@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class PostsController extends Controller
 {
 
+    
     // public function getData() {
     //     // return [
     //     //     ['id' => 1, 'name' => 'Amercan Standard Strat', 'brand' => 'Fender'],
@@ -86,9 +87,16 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    // public function show($id) {
+    //     $posts = self::all();
+    //     $number = (int)$id;
+    //     return $posts[$number-1];
+    // }
+    public function show(Post $post)
     {
-        //
+        return view('posts.show', [
+            'post' => $post
+        ]);
     }
 
     /**
@@ -97,9 +105,11 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Post $post)
     {
-        //
+        return view('posts.edit', [
+            'post' => $post
+        ]);
     }
 
     /**

@@ -1,9 +1,17 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    background-color: #ededed;
+}
+html {
+    background-color: #ededed;
 }
 main {
     padding-top: 70px;
+    background-color: #ededed;
+}
+div {
+    background-color: #fbfbfb;
 }
 #navbar {
     background-color: #FFFFFF;

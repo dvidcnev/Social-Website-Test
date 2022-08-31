@@ -2,9 +2,7 @@
     color: white;
 } */
 #main {
-    width: 60%;
-    border-left: 2px solid rgb(212, 212, 212);
-    border-right: 2px solid rgb(212, 212, 212);
+    width: 52.5%;
 }
 img {
     max-height: 400px;

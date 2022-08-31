@@ -15,9 +15,5 @@ class Post extends Model
     //         ['id' => 3, 'name' => 'Explorer', 'description' => 'Where has thou gone? Nowhere? It has been this way.', 'image' => 'https://blog.kakaocdn.net/dn/3mZLi/btqDNmxLE7J/ECehLAdSCHTEift0vhVX2k/img.jpg'],
     //     ];
     // }
-    public static function show($id) {
-        $posts = self::all();
-        return $posts[$id-1];
-    }
     protected $fillable = ["name", "description", "file_path", "created_at", "updated_at"];
 }
