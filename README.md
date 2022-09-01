@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://w7.pngwing.com/pngs/729/466/png-transparent-award-brand-epic-flickr-logo-media-social-epic-social-media-icons-icon.png" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="[https://w7.pngwing.com/pngs/729/466/png-transparent-award-brand-epic-flickr-logo-media-social-epic-social-media-icons-icon.png](https://icons-for-free.com/iconfiles/png/512/chatting+circle+comment+message+messaging+icon-1320196712916974892.png)" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
