@@ -10,12 +10,17 @@ class SiteController extends Controller
 {
     public function index() {
         return view('home', [
-            'posts' => Post::all()
+            'posts' => Post::simplePaginate(10)
         ]);
     }
     public function about() {
         return view('about');
     }
+
+
+
+
+    // This is old lol
     // public function show($id) {
     //     return view('posts.show', [
     //         'post' => Post::show($id)

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Post;
+use App\Http\Requests\PostValidation;
 
 use Illuminate\Http\Request;
 
@@ -119,9 +120,22 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(PostValidation $request, Post $post)
     {
-        //
+        $data = $request->validated();
+
+        if ($request->hasFile('file')) {
+        $request->file->store('pictures', 'public');
+        $root = $data['file']->hashName();
+        $post->file_path = $root;
+        }
+
+        $post->name = $data['name'];
+        $post->description = $data['description'];
+
+        $post->save();
+
+        return redirect()->route('posts.show', $post->id);
     }
 
     /**

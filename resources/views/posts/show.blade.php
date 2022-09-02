@@ -14,7 +14,10 @@
             <h1>{{$post->name}}</h1>
             <img class="img-thumbnail" src="{{url('storage/pictures/'.$post->file_path)}}">
             <p class="descript-text py-1">{{$post['description']}}</p>
-            <p>{{$post->created_at}}</p>
+            <div>
+                <p class="m-auto">{{$post->created_at}}</p>
+                <a href="{{ route('posts.edit', $post) }}"><button type="submit" class="btn btn-secondary my-3">Edit</button></a>
+            </div>
     </div>
 </div>
 @endsection

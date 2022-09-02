@@ -1,5 +1,8 @@
 @extends('layout')
 
+@section('css')
+<link rel="stylesheet" href="{{url('css/edit.css')}}">
+@endsection
 
 @section('content')
 
@@ -15,7 +18,7 @@
 
 <div id="createmain" class="d-flex">
     <h1 class="my-4">Edit</h1>
-    <form action="{{ route('posts.update') }}" method="post" enctype="multipart/form-data">
+    <form action="{{  route('posts.update', ['post' => $post->id]) }}" method="post" enctype="multipart/form-data">
             <!-- Add CSRF Token -->
             @csrf
             @method('PUT')
@@ -29,7 +32,7 @@
         </div>
         <div class="form-group flexing py-3">
             <img class="img-thumbnail" src="{{url('storage/pictures/'.$post->file_path)}}">
-            <input id="filebutton" class="btn" type="file" name="file"  required>
+            <input id="filebutton" class="btn" type="file" name="file" value="{{$post->file_path}}">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

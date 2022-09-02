@@ -4,7 +4,7 @@
 #main {
     width: 52.5%;
 }
-img {
+#picture {
     max-height: 400px;
 }
 #main a {
@@ -16,4 +16,7 @@ img {
 }
 .descript-text {
     font-size: 1.35rem;
+}
+#pagination {
+    justify-content: center;
 }
